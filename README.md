@@ -44,7 +44,7 @@ java Main
 
 You can also run the game by double-clicking the `SnakeGame.bat` file.
 
-📥 [Download SnakeGame.bat](#)
+📥 [Download SnakeGame.bat](https://github.com/Arosh-Upathilak/Java_SnakeGame/blob/main/SnakeGame.lnk)
 ---
 
 ## 🎮 Controls
