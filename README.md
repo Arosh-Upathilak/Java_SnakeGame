@@ -6,23 +6,21 @@ This is a simple Snake Game built using Java. It demonstrates basic GUI developm
 
 ## 📁 Project Structure
 
-```
-SnakeGame/
-├── src/
-│   ├── Main.java
-│   ├── GamePanel.java
-│   └── assets/
-│       ├── snaketitle.jpg
-│       ├── enemy.png
-│       ├── snakeimage.png
-│       ├── upmouth.png
-│       ├── downmouth.png
-│       ├── leftmouth.png
-│       └── rightmouth.png
-├── SnakeGame.bat
-├── SnakeGame.iml
+SnakeGame/  
+├── src/  
+│   ├── Main.java  
+│   ├── GamePanel.java  
+│   └── assets/  
+│       ├── snaketitle.jpg  
+│       ├── enemy.png  
+│       ├── snakeimage.png  
+│       ├── upmouth.png  
+│       ├── downmouth.png  
+│       ├── leftmouth.png  
+│       └── rightmouth.png  
+├── SnakeGame.bat  
+├── SnakeGame.iml  
 ├── README.md
-```
 
 ---
 
@@ -34,17 +32,30 @@ SnakeGame/
 
 ### 🏃 Run via Terminal
 
-```bash
-cd path/to/SnakeGame/src
-javac Main.java
+cd path/to/SnakeGame/src  
+javac Main.java  
 java Main
-```
 
 ### 🖱️ Run via .bat file (Windows)
 
-You can also run the game by double-clicking the `SnakeGame.bat` file.
+Create the `.bat` file to run the program in the background:
 
-📥 [Download SnakeGame.bat](https://github.com/Arosh-Upathilak/Java_SnakeGame/blob/main/SnakeGame.lnk)
+echo java Main > SnakeGame.bat
+
+Then create a `.vbs` file to run the batch file silently:
+
+1. Run:
+
+echo > SnakeGame.vbs  
+notepad SnakeGame.vbs
+
+2. Paste this into Notepad:
+
+Set WshShell = CreateObject("WScript.Shell")  
+WshShell.Run "SnakeGame.bat", 0, False
+
+Save and close the file. Now double-click the `.vbs` file to run the game without opening a terminal window.
+
 ---
 
 ## 🎮 Controls
@@ -66,7 +77,7 @@ You can also run the game by double-clicking the `SnakeGame.bat` file.
 
 ## 🖼️ Assets
 
-All game images are in the `src/assets/` folder.
+All game images are located in the `src/assets/` folder.
 
 ---
 
